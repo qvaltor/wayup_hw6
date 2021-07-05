@@ -1,0 +1,276 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #201b2d;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+}
+
+p {
+	line-height: 1.65em;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.header {
+	
+background: rgba(78,192,254,1);
+background: -moz-linear-gradient(-45deg, rgba(78,192,254,1) 0%, rgba(55,144,217,1) 100%);
+/* background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(78,192,254,1)), color-stop(100%, rgba(55,144,217,1))); */
+background: -webkit-linear-gradient(-45deg, rgba(78,192,254,1) 0%, rgba(55,144,217,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(78,192,254,1) 0%, rgba(55,144,217,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(78,192,254,1) 0%, rgba(55,144,217,1) 100%);
+background: linear-gradient(135deg, rgba(78,192,254,1) 0%, rgba(55,144,217,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ec0fe', endColorstr='#3790d9', GradientType=1 );
+
+	padding-top: 100px;
+	padding-bottom: 225px;
+	color: #fff;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.offer {
+	width: 570px;
+}
+
+.title {
+	font-size: 37px;
+	font-family: "Ubuntu";
+}
+
+.title span {
+	font-size: 59px;
+}
+
+.intro {
+	margin-bottom: 37px;
+	margin-top: 30px;
+	width: 390px;
+}
+
+.btn {
+	font-family: 'Montserrat', sans-serif;
+	background: #ffd429;
+	color:black;
+	font-size: 16px;
+	/* border-radius: 100px; */
+	display: block;
+	width: 220px;
+	padding: 20px 0;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+
+.btn:hover {
+	background: #d9860e;
+}
+
+.desktop {
+	margin-top: 72px;
+}
+
+.learn {
+	padding-top: 108px;
+	padding-bottom: 120px;
+}
+
+.section-title {
+	font-size: 30px;
+	text-align: center;
+}
+
+.skills {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 70px;
+}
+
+.skill {
+	width: 350px;
+	background: url('../img/time-machine.jpg') no-repeat left top;
+	padding-left: 100px;
+}
+
+.skill-title {
+	font-size: 18px;
+}
+
+.skill-text {
+	margin-top: 7px;
+}
+
+.skill-free {
+	width: 380px;
+	background: url('../img/beach.jpg') no-repeat left top;
+}
+
+.skill-change {
+	background: url('../img/launch.jpg') no-repeat left top;
+}
+
+.mail {
+	background: #efecf4;
+	padding-top: 173px;
+	padding-bottom: 190px;
+}
+
+.form {
+	width: 340px;
+	margin-top: 40px;
+}
+
+.input {
+	width: 340px;
+	border: 1px solid #bfb8d1;
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+	border-radius: 2px;
+	height: 48px;
+	padding-left: 25px;
+	margin: 11px 450px;
+}
+
+.btn-form {
+	border: 0;
+	cursor: pointer;
+	margin: 11px 450px;
+	width: 340px;
+}
+
+.footer {
+	padding: 33px 0;
+	background: #201b2d;
+}
+
+.credits {
+	color: #d4cee3;
+	font-size: 14px;
+	margin: 0;
+	text-align: center;
+}
+
+.red {
+	color: red;
+}
+
+.animated {
+	opacity: 0;
+}
+
+/*Responsive*/
+
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}
+
+	.btn-form {
+			margin: 11px 350px;
+	}
+	
+	.input {
+		width: 100%;
+		margin: 11px 350px;
+	}
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+	}
+	
+	.wrapper {
+		flex-direction: column;
+	}
+	.offer {
+		width: 100%;
+	}
+	.intro {
+		width: auto;
+	}
+	.desktop {
+		display: block;
+	    width: 549px;
+	    margin: 72px auto 0;
+	}
+	.skills {
+		flex-direction: column;
+	}
+	.skill {
+		width: auto;
+		margin-bottom: 30px;
+	}
+
+	.btn {
+		margin-left: none;
+	}
+
+	.input {
+		width: 100%;
+		margin: 11px 200px;
+	}
+	.btn-form {
+		margin: 11px 200px;
+	}
+}
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+	}
+	.desktop {
+		width: 95%;
+	}
+	.input {
+		width: 100%;
+		margin: 11px 100px;
+	}
+	.btn {
+		margin-left: 30%;
+	    margin-top: 15px;
+	    width: 100%;
+	}
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+	.container {
+		width: 85%;
+	}
+
+	.form {
+		width: 100%;
+	}
+
+	.input {
+		margin: 11px auto;
+		font-size: 12px;
+	}
+
+	.btn {
+		margin-left: 0;
+	}
+}
